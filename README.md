@@ -1,5 +1,6 @@
 # Beginner DE Project - Batch Edition
 
+<<<<<<< HEAD
 If you are interested in step by step explanation and review, check out the post for this repo at
 [project-for-beginners-batch-edition](https://www.startdataengineering.com/post/data-engineering-project-for-beginners-batch-edition)
 
@@ -77,3 +78,7 @@ In you local terminal type within your project base directory
 ```bash
 docker-compose -f docker-compose-LocalExecutor.yml down
 ```
+=======
+Follow along for the article at [project-for-beginners-batch-edition](https://www.startdataengineering.com/post/data-engineering-project-for-beginners-batch-edition)
+
+>>>>>>> starter

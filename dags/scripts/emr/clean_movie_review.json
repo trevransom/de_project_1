@@ -18,7 +18,11 @@
       "Jar": "command-runner.jar",
       "Args": [
         "spark-submit",
+<<<<<<< HEAD
         "s3://{{ params.BUCKET_NAME }}/scripts/random_text_classification.py"
+=======
+        "s3://{{ params.BUCKET_NAME  }}/scripts/random_text_classification.py"
+>>>>>>> starter
       ]
     }
   },

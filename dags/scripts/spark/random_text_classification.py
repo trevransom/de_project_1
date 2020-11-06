@@ -33,10 +33,17 @@ def random_text_classifier(input_loc, output_loc):
     df_clean = remover.transform(
         df_tokens).select('cid', 'review_clean')
 
+<<<<<<< HEAD
     # function to check presence of good
     df_out = df_clean.select('cid', array_contains(
         df_clean.review_clean, "good").alias('positive_review'))
     # parquet is a popular column storage format, we use it here
+=======
+    # function to check presence of good and naively assume its a positive review
+    df_out = df_clean.select('cid', array_contains(
+        df_clean.review_clean, "good").alias('positive_review'))
+
+>>>>>>> starter
     df_out.write.mode("overwrite").parquet(output_loc)
 
 
