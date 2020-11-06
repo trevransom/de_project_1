@@ -1,0 +1,2 @@
+- setting up AWS with Redshift, EMR, S3, Hadoop
+- Using Redshift for Data Warehousing
