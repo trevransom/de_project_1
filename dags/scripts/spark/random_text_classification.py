@@ -13,7 +13,6 @@ def random_text_classifier(input_loc, output_loc):
         1. clean input data
         2. use a pre-trained model to make prediction 
         3. write predictions to a HDFS output
-
     Since this is meant as an example, we are going to skip building a model,
     instead we are naively going to mark reviews having the text "good" as positive and
     the rest as negative 
@@ -33,17 +32,10 @@ def random_text_classifier(input_loc, output_loc):
     df_clean = remover.transform(
         df_tokens).select('cid', 'review_clean')
 
-<<<<<<< HEAD
     # function to check presence of good
     df_out = df_clean.select('cid', array_contains(
         df_clean.review_clean, "good").alias('positive_review'))
     # parquet is a popular column storage format, we use it here
-=======
-    # function to check presence of good and naively assume its a positive review
-    df_out = df_clean.select('cid', array_contains(
-        df_clean.review_clean, "good").alias('positive_review'))
-
->>>>>>> starter
     df_out.write.mode("overwrite").parquet(output_loc)
 
 

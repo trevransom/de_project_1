@@ -21,8 +21,8 @@ movie_clean_emr_steps = './dags/scripts/emr/clean_movie_review.json'
 movie_text_classification_script = './dags/scripts/spark/random_text_classification.py'
 
 # remote config
-BUCKET_NAME = 'trevspectrumbucket'
-EMR_ID = 'j-33KSEETB5SKJN'
+BUCKET_NAME = '----'
+EMR_ID = '-----'
 temp_filtered_user_purchase_key= 'user_purchase/stage/{{ ds }}/temp_filtered_user_purchase.csv'
 movie_review_load = 'movie_review/load/movie.csv'
 movie_review_load_folder = 'movie_review/load/'
